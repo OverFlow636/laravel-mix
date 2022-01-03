@@ -58,7 +58,7 @@ class JavaScript {
     webpackRules() {
         return [
             {
-                test: /\.(cjs|mjs|jsx?|tsx?)$/,
+                test: Config.babelLoaderRuleTest || /\.(cjs|mjs|jsx?|tsx?)$/,
                 exclude: /(node_modules|bower_components)/,
                 use: [
                     {

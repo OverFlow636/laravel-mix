@@ -243,6 +243,8 @@ module.exports = function (mix) {
             Object.keys(options).forEach(key => {
                 this[key] = options[key];
             });
-        }
+        },
+
+        babelLoaderRuleTest: undefined
     };
 };

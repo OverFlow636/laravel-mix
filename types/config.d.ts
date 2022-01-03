@@ -165,4 +165,6 @@ interface MixConfig {
 
     /** Merge the given options with the current defaults. */
     merge?: (options: MixConfig) => void;
+
+    babelLoaderRuleTest?: RegExp;
 }
